@@ -4,7 +4,7 @@
 class Loader
 {
 public:
-	static RawModel loadToVao(float[]);
+	static RawModel* loadToVao(float[], size_t);
 
 };
 

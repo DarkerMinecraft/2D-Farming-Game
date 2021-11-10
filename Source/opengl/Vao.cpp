@@ -26,7 +26,7 @@ void Vao::storeDataInAttributeList(unsigned int index, int size, float data[])
 	Vbo vbo (GL_ARRAY_BUFFER);
 	vbo.bindVbo();
 	vbo.storeData(data);
-	glVertexAttribPointer(index, size, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)0);
+	glVertexAttribPointer(index, size, GL_FLOAT, GL_FALSE, 0, (void*)0);
 	vbo.unbindVbo();
 }
 
